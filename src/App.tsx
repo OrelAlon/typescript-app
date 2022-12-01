@@ -1,15 +1,18 @@
+import { useState } from "react";
+
+import InputFeild from "./components/InputFeild";
+
 import "./App.css";
 
-let myNamr = "orel";
-let myAge = 33;
+const App: React.FC = () => {
+  const [todo, setTodo] = useState<string | number>("");
 
-function App() {
   return (
     <div className='App'>
-      start
-      <a className='App-link'>ok </a>
+      <span className='heading'>To - Do With Type-Script</span>
+      <InputFeild todo={todo} setTodo={setTodo} />
     </div>
   );
-}
+};
 
 export default App;
