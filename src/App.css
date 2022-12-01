@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 .App {
   width: 100vw;
   min-height: 100vh;
@@ -11,7 +10,9 @@
 }
 
 .heading {
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
+  font-family: "Neucha", cursive;
+
   font-size: 40px;
   margin: 30px 0;
   color: white;

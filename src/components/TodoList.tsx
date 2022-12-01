@@ -2,16 +2,16 @@ import SingleTodo from "./SingleTodo";
 import { Todo } from "../models/model";
 import "./styles.css";
 
-interface Props {
+interface props {
   todos: Todo[];
 
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 
-const TodoList: React.FC<Props> = ({ todos, setTodos }: Props) => {
+const TodoList: React.FC<props> = ({ todos, setTodos }: props) => {
   return (
     <div className='todos'>
-      <h1>Open Tasks</h1>
+      <h1 className='h1-test'>Open Tasks</h1>
 
       {todos.map((todo) => (
         <SingleTodo
