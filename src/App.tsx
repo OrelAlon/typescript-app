@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 import InputFeild from "./components/InputFeild";
-
+import { Todo } from "./models/model";
 import "./App.css";
 
 const App: React.FC = () => {
   const [todo, setTodo] = useState<string | number>("");
+  const [todos, setTodos] = useState<Todo[]>([]);
 
   return (
     <div className='App'>
