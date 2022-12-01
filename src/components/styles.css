@@ -80,8 +80,8 @@
 
 .todos__heading {
   font-size: 30px;
-  /* text-align: center; */
-  color: white;
+  text-align: center;
+  color: black;
 }
 
 .todos__single {
